@@ -23,6 +23,8 @@ export class PortfolioComponent implements OnInit{
   springboot: boolean = false;
   javascript: boolean = false;
   nodejs: boolean = false;
+  html: boolean = false;
+  css: boolean = false;
   filtering: boolean = false;
 
   constructor(private titleService: Title, private projectsService: ProjectsService) {
@@ -66,7 +68,13 @@ export class PortfolioComponent implements OnInit{
     if(this.nodejs){
       filterTags.push(Tag.NODEJS)
     }
-    if(this.angular || this.typescript || this.python || this.csharp || this.java || this.aspnet || this.react || this.springboot || this.javascript || this.nodejs){
+    if(this.html){
+      filterTags.push(Tag.HTML)
+    }
+    if(this.css){
+      filterTags.push(Tag.CSS)
+    }
+    if(this.angular || this.typescript || this.python || this.csharp || this.java || this.aspnet || this.react || this.springboot || this.javascript || this.nodejs || this.html || this.css){
       this.filtering=true
     }
     else{
@@ -86,6 +94,8 @@ export class PortfolioComponent implements OnInit{
     this.springboot = false;
     this.javascript = false;
     this.nodejs = false;
+    this.html=false;
+    this.css=false;
     this.filtering = false;
 
     this.projects=this.projectsService.GetProjects();

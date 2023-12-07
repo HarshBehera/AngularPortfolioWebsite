@@ -9,6 +9,8 @@ export class Tag{
     static readonly SPRINGBOOT=new Tag('SpringBoot','green');
     static readonly JAVASCRIPT =new Tag('JavaScript','orange');
     static readonly NODEJS = new Tag('NodeJS','brown');
+    static readonly HTML = new Tag('HTML','green');
+    static readonly CSS = new Tag('CSS','red');
 
     private constructor(private readonly key: string,public readonly color:string){
 
