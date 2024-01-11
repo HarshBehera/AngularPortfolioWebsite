@@ -1,6 +1,18 @@
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
 accordion-group::ng-deep .btn-link{
     color: white;
 }
 accordion-group::ng-deep .card-header{
     background-color: #007bff;
+}
+li{
+    margin-left: 50px;
 }

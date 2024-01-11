@@ -3,16 +3,17 @@
 
     <div class="pb-2">
         <accordion [isAnimated]="true" class="shadow">
-            <accordion-group [(isOpen)]="isWorkExperience">
+            <accordion-group [(isOpen)]="isProjects">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Work Experience</div>
+                    <div class="btn-link">Projects</div>
 
                     <div style="width: 10.95px;">
-                        <div *ngIf="!isWorkExperience" style="color: white;">></div>
-                        <div *ngIf="isWorkExperience" style="color: white;">v</div>
+                        <div *ngIf="!isProjects" style="color: white;">></div>
+                        <div *ngIf="isProjects" style="color: white;">v</div>
                     </div>
                 </button>
+
             </accordion-group>
 
             <accordion-group [(isOpen)]="isEducationOpen">
@@ -25,6 +26,32 @@
                         <div *ngIf="isEducationOpen" style="color: white;">v</div>
                     </div>
                 </button>
+
+                <div style="text-align: start;">
+                    
+                    <h1>National Institute of Technology Rourkela</h1>
+                    <h2>July 2019 to June 2023</h2>
+                    <h3>Bachelors of Technology in Electrical Engineering</h3>
+                    <h4>CGPA: 6.69/10.00</h4>
+                </div>
+                <br>
+                <br>
+                <div style="text-align: start;">
+                    
+                    <h1>Ispat English Medium School Sector-22 Rourkela</h1>
+                    <h2>July 2017 to April 2019</h2>
+                    <h3>Intermediate</h3>
+                    <h4>Percentage: 74.8%</h4>
+                </div>
+                <br>
+                <br>
+                <div style="text-align: start;">
+                    <h1>Ispat English Medium School Sector-20 Rourkela</h1>
+                    <h2>July 2007 to April 2017</h2>
+                    <h3>Matriculation</h3>
+                    <h4>Percentage: 88.67%</h4>
+
+                </div>
             </accordion-group>
 
             <accordion-group [(isOpen)]="isCertificationsOpen">
@@ -49,6 +76,17 @@
                         <div *ngIf="isSkillsOpen" style="color: white;">v</div>
                     </div>
                 </button>
+                <ul style="display: flex ;">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavScript</li>
+                    <li>TypeScript</li>
+                    <li>Angular</li>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                </ul>
             </accordion-group>
 
         </accordion>

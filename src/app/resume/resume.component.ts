@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent {
-  isWorkExperience: boolean = false;
+  isProjects: boolean = false;
   isEducationOpen: boolean = false;
   isCertificationsOpen: boolean = false;
   isSkillsOpen: boolean = false;
